@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xscent Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Xscent Perfumes</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Xscent Perfume</h1>
+        <p>Discover the essence of luxury with our exclusive perfume collection.</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products">
+        <h2>Our Collection</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/perfume1.jpeg" alt="Perfume 1">
+                <h3>Divine Blossom</h3>
+                <p>RS 2799</p>
+                <button onclick="addToCart('Divine Blossom', 2799)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/perfume2.jpeg" alt="Perfume 2">
+                <h3>Avenge X</h3>
+                <p>RS 2800</p>
+                <button onclick="addToCart('Avenge X', 2800)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/perfume3.jpeg" alt="Perfume 3">
+                <h3>Bella</h3>
+                <p>RS 3000</p>
+                <button onclick="addToCart('Bella', 3000)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: RS <span id="cart-total">0.00</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
